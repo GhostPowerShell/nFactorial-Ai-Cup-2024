@@ -19,7 +19,7 @@ const UploadFileButton = ({ onUpload }) => {
       variant="contained"
       component="label"
       startIcon={<UploadFileIcon />}
-      sx={{ marginTop: '10px', marginBottom: '20px' }}
+      sx={{ marginTop: '10px', marginBottom: '20px', width: '200px' }}
     >
       Upload file
       <input type="file" hidden onChange={handleFileChange} />

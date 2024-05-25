@@ -43,8 +43,8 @@ const AnalysisPage = () => {
           <VulnerabilityReport vulnerabilities={vulnerabilities} />
         </Grid>
       </Grid>
-      <Box mt={2} display="flex" justifyContent="center">
-        <Button variant="contained" color="primary" onClick={handleAnalyze} disabled={loading} sx={{ marginRight: '10px' }}>
+      <Box mt={2} display="flex" justifyContent="center" position="sticky" bottom="10px">
+        <Button variant="contained" color="primary" onClick={handleAnalyze} disabled={loading} sx={{ marginRight: '10px', width: '200px' }}>
           Analyze Code
         </Button>
         <PatchButton onClick={handleGeneratePatch} disabled={loading} />
