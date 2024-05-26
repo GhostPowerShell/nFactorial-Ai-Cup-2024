@@ -1,5 +1,15 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim
+FROM python:3.9-alpine
+
+# Install build tools
+RUN apk add --no-cache \
+    g++ \
+    make \
+    libffi-dev \
+    gcc \
+    musl-dev \
+    linux-headers \
+    libc-dev
 
 # Set the working directory in the container
 WORKDIR /app
